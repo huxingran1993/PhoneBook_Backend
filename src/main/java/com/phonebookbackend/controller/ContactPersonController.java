@@ -5,16 +5,15 @@ import com.phonebookbackend.repository.ContactPersonRepository;
 import com.phonebookbackend.services.ContactPersonService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.apache.juli.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.logging.Logger;
 
 @Api(tags = "ContactPersonController")
 @CrossOrigin(origins = "http://localhost:4200")
@@ -32,6 +31,8 @@ public class ContactPersonController {
 
     @ApiOperation("Get all contact info")
     @GetMapping()
+    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+
     public ResponseEntity<List<ContactPerson>> getAllContacts(@RequestParam(required = false) String name){
         try {
             List<ContactPerson> contacts = new ArrayList<ContactPerson>();
@@ -57,6 +58,8 @@ public class ContactPersonController {
 
         @ApiOperation("Get contact info by id")
         @GetMapping("/{id}")
+        @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+
         public ResponseEntity getById(@PathVariable String id){
          try {
              return ResponseEntity.ok(contactPersonService.getById(id).get());

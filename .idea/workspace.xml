@@ -2,10 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b45866ae-4c81-4634-ba2d-fca345e5c6f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/config/Swagger2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/dao/UmsAdminRoleRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/model/ERole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/repository/UmsAdminRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/jwt/AuthEntryPointJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/jwt/AuthTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/jwt/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/payload/request/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/payload/request/SignupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/payload/response/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/payload/response/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/services/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/services/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/services/UmsAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phone-book-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/phone-book-backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/PhoneBookBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/PhoneBookBackendApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/ContactPersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/ContactPersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/model/ContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/model/ContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/controller/ContactPersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/controller/ContactPersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson$ContactPersonBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson$ContactPersonBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +41,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -58,8 +85,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/JAVA/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="D:/Java_study/Mall/mall/mall-demo" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -106,7 +133,10 @@
       <workItem from="1590334389750" duration="749000" />
       <workItem from="1590586429257" duration="1053000" />
       <workItem from="1590588355778" duration="301000" />
-      <workItem from="1590594283194" duration="5232000" />
+      <workItem from="1590594283194" duration="6225000" />
+      <workItem from="1590749633105" duration="15484000" />
+      <workItem from="1590783749893" duration="8445000" />
+      <workItem from="1590919318929" duration="15367000" />
     </task>
     <task id="LOCAL-00001" summary="add Swagger">
       <created>1590587232205</created>
@@ -122,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590594368122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add Swagger">
+      <created>1590599955308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590599955308</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +167,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="D:" />
+    </ignored-roots>
     <MESSAGE value="add Swagger" />
     <option name="LAST_COMMIT_MESSAGE" value="add Swagger" />
   </component>
@@ -142,62 +182,82 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1043" y="505" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1590599308387" />
-    <state x="1556" y="517" key="#com.intellij.ide.util.MemberChooser" timestamp="1589720847891">
+    <state x="1556" y="517" key="#com.intellij.ide.util.MemberChooser" timestamp="1590789434425">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1556" y="517" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1589720847891" />
-    <state x="768" y="297" key="CommitChangelistDialog2" timestamp="1590594366460">
+    <state x="1556" y="517" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1590789434425" />
+    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2" timestamp="1590599953755">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="768" y="297" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1590594366460" />
-    <state x="1061" y="457" key="FileChooserDialogImpl" timestamp="1590587488683">
+    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1590599953755" />
+    <state x="1061" y="457" key="FileChooserDialogImpl" timestamp="1590749788344">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1590587488683" />
-    <state width="1380" height="521" key="GridCell.Tab.0.bottom" timestamp="1590599662931">
+    <state x="1061" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1590749788344" />
+    <state width="1280" height="515" key="GridCell.Tab.0.bottom" timestamp="1590937082633">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1380" height="521" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590599662931" />
-    <state width="1380" height="521" key="GridCell.Tab.0.center" timestamp="1590599662931">
+    <state width="1280" height="515" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590937082633" />
+    <state width="1280" height="515" key="GridCell.Tab.0.center" timestamp="1590937082633">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1380" height="521" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590599662931" />
-    <state width="1380" height="521" key="GridCell.Tab.0.left" timestamp="1590599662930">
+    <state width="1280" height="515" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590937082633" />
+    <state width="1280" height="515" key="GridCell.Tab.0.left" timestamp="1590937082633">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1380" height="521" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590599662930" />
-    <state width="1380" height="521" key="GridCell.Tab.0.right" timestamp="1590599662931">
+    <state width="1280" height="515" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590937082633" />
+    <state width="1280" height="515" key="GridCell.Tab.0.right" timestamp="1590937082633">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1380" height="521" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590599662931" />
-    <state width="1380" height="521" key="GridCell.Tab.1.bottom" timestamp="1590599662932">
+    <state width="1280" height="515" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590937082633" />
+    <state width="1280" height="515" key="GridCell.Tab.1.bottom" timestamp="1590937082633">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1380" height="521" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590599662932" />
-    <state width="1380" height="521" key="GridCell.Tab.1.center" timestamp="1590599662931">
+    <state width="1280" height="515" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590937082633" />
+    <state width="1280" height="515" key="GridCell.Tab.1.center" timestamp="1590937082633">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1380" height="521" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590599662931" />
-    <state width="1380" height="521" key="GridCell.Tab.1.left" timestamp="1590599662931">
+    <state width="1280" height="515" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590937082633" />
+    <state width="1280" height="515" key="GridCell.Tab.1.left" timestamp="1590937082633">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1380" height="521" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590599662931" />
-    <state width="1380" height="521" key="GridCell.Tab.1.right" timestamp="1590599662932">
+    <state width="1280" height="515" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590937082633" />
+    <state width="1280" height="515" key="GridCell.Tab.1.right" timestamp="1590937082633">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1380" height="521" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590599662932" />
-    <state x="782" y="344" key="SettingsEditor" timestamp="1590594297584">
+    <state width="1280" height="515" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590937082633" />
+    <state width="2561" height="498" key="GridCell.Tab.2.bottom" timestamp="1590931124118">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="782" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1590594297584" />
+    <state width="2561" height="498" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1590931124118" />
+    <state width="2561" height="498" key="GridCell.Tab.2.center" timestamp="1590931124118">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2561" height="498" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1590931124118" />
+    <state width="2561" height="498" key="GridCell.Tab.2.left" timestamp="1590931124118">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2561" height="498" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1590931124118" />
+    <state width="2561" height="498" key="GridCell.Tab.2.right" timestamp="1590931124118">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2561" height="498" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590931124118" />
+    <state x="1361" y="416" key="Maven.ArtifactSearchDialog" timestamp="1590920016861">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1361" y="416" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590920016861" />
+    <state x="782" y="344" key="SettingsEditor" timestamp="1590923446125">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="782" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1590923446125" />
     <state x="958" y="406" key="VCS.ChangeListViewerDialog" timestamp="1590587405147">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="958" y="406" key="VCS.ChangeListViewerDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590587405147" />
-    <state x="1012" y="516" key="Vcs.Push.Dialog.v2" timestamp="1590594388677">
+    <state x="1012" y="516" key="Vcs.Push.Dialog.v2" timestamp="1590599974555">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1012" y="516" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1590594388677" />
+    <state x="1012" y="516" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1590599974555" />
     <state x="93" y="93" width="2375" height="1215" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1590588394967">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -214,9 +274,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1112" y="340" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1589627722254" />
-    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup" timestamp="1590597448765">
+    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup" timestamp="1590920309207">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1590597448765" />
+    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1590920309207" />
   </component>
 </project>
