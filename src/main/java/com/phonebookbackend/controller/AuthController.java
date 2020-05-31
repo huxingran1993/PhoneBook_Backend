@@ -11,6 +11,8 @@ import com.phonebookbackend.security.payload.request.SignupRequest;
 import com.phonebookbackend.security.payload.response.JwtResponse;
 import com.phonebookbackend.security.payload.response.MessageResponse;
 import com.phonebookbackend.security.services.UserDetailsImpl;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -26,6 +28,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@Api(tags = "AuthenticationController")
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
@@ -45,6 +48,7 @@ public class AuthController {
     @Autowired
     JwtTokenUtil jwtTokenUtil;
 
+    @ApiOperation("Sign in")
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest){
         Authentication authentication = authenticationManager.authenticate(
@@ -64,6 +68,7 @@ public class AuthController {
                 roles));
     }
 
+    @ApiOperation("Register")
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signupRequest){
         if (userRepository.existsByUsername(signupRequest.getUsername())){

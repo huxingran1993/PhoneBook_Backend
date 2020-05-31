@@ -31,7 +31,7 @@ public class ContactPersonController {
 
     @ApiOperation("Get all contact info")
     @GetMapping()
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
 
     public ResponseEntity<List<ContactPerson>> getAllContacts(@RequestParam(required = false) String name){
         try {
@@ -58,7 +58,7 @@ public class ContactPersonController {
 
         @ApiOperation("Get contact info by id")
         @GetMapping("/{id}")
-        @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+       // @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
 
         public ResponseEntity getById(@PathVariable String id){
          try {
