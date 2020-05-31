@@ -15,6 +15,10 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     UserRepository userRepository;
 
+    /**
+     * @Transactional The persistence context is just a synchronizer object that tracks the state of a
+     * limited set of Java objects and makes sure that changes on those objects are eventually persisted back into the database.
+     * */
     @Override
     @Transactional
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
