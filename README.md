@@ -2,7 +2,8 @@
 Add more functions for the back end
 
 # Swagger
-Add Swagger for ContactPersonController
+- Add Swagger for ContactPersonController
+- Go to the url with Swagger UI: http://localhost:8080/swagger-ui.html#/
 
 # JWT
 - User can signup new account, or login with username & password.
