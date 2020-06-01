@@ -13,3 +13,4 @@ Add more functions for the back end
 
 # Testing
 - Implement Unit Test and integrate unit test tool between JUnit and Mockito.
+- Implement Integration testing the APIs in the controller with @WebMvcTest
