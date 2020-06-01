@@ -15,6 +15,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ *BDDMockito  It defines a clearly structured way of writing tests following three sections
+ * (Arrange, Act, Assert):
+ * -- given some preconditions (Arrange)
+ * -- when an action occurs (Act)
+ * -- then verify the output (Assert)
+ *
+ * */
 @ExtendWith(MockitoExtension.class)
 public class ContactPersonServiceTest {
     @Mock
@@ -43,5 +51,22 @@ public class ContactPersonServiceTest {
         given(contactPersonRepository.findById(id)).willReturn(Optional.of(contactPerson));
         final Optional<ContactPerson> expected = contactPersonService.getById(id);
         assertNotNull(expected);
+    }
+
+    @Test
+    void shouldBeDelete(){
+        final String id = "1";
+        contactPersonService.delete(id);
+        contactPersonService.delete(id);
+        verify(contactPersonRepository, times(2)).deleteById(id);
+    }
+
+    @Test
+    void updateContactPerson(){
+        final  ContactPerson contactPerson = new ContactPerson("1","Xing","Hu","+32888");
+        given(contactPersonRepository.save(contactPerson)).willReturn(contactPerson);
+        final ContactPerson expected = contactPersonService.update(contactPerson);
+        assertNotNull(expected);
+        verify(contactPersonRepository).save(any(ContactPerson.class));
     }
 }

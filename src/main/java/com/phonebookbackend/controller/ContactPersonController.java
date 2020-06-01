@@ -3,6 +3,7 @@ package com.phonebookbackend.controller;
 import com.phonebookbackend.model.ContactPerson;
 import com.phonebookbackend.repository.ContactPersonRepository;
 import com.phonebookbackend.services.ContactPersonService;
+import com.phonebookbackend.services.impl.ContactPersonServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +21,12 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/contacts")
 public class ContactPersonController {
-    private final ContactPersonService contactPersonService;
-    @Autowired
-    ContactPersonRepository contactPersonRepository;
+    private final ContactPersonServiceImpl contactPersonService;
+//    @Autowired
+//    ContactPersonRepository contactPersonRepository;
 
     //private static final Logger LOGGER = LogFactory.getLogger()
-    public ContactPersonController(ContactPersonService contactPersonService) {
+    public ContactPersonController(ContactPersonServiceImpl contactPersonService) {
         this.contactPersonService = contactPersonService;
     }
 
@@ -37,9 +38,11 @@ public class ContactPersonController {
         try {
             List<ContactPerson> contacts = new ArrayList<ContactPerson>();
             if (name == null)
-                contactPersonRepository.findAll().forEach(contacts::add);
+                contactPersonService.getAll().forEach(contacts::add);
+                //contactPersonRepository.findAll().forEach(contacts::add);
             else
-                contactPersonRepository.findByName(name).forEach(contacts::add);
+                contactPersonService.getByName(name).forEach(contacts::add);
+                //contactPersonRepository.findByName(name).forEach(contacts::add);
             if (contacts.isEmpty()) {
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
@@ -52,7 +55,8 @@ public class ContactPersonController {
         @ApiOperation("Add contact info")
         @PostMapping()
         public ContactPerson addContact(@RequestBody ContactPerson contactPerson){
-            contactPersonRepository.save(contactPerson);
+            contactPersonService.createContactPerson(contactPerson);
+           // contactPersonRepository.save(contactPerson);
             return contactPerson;
         }
 
@@ -78,7 +82,8 @@ public class ContactPersonController {
         @ApiOperation("Update specific contact info")
         @PutMapping("/{id}")
         public ContactPerson update(@PathVariable String id, @RequestBody ContactPerson contactPerson){
-            Optional<ContactPerson> optionalContactPerson = contactPersonRepository.findById(id);
+            Optional<ContactPerson> optionalContactPerson = contactPersonService.getById(id);
+            //Optional<ContactPerson> optionalContactPerson = contactPersonRepository.findById(id);
             ContactPerson cp = optionalContactPerson.get();
             if (contactPerson.getName()!=null)
                 cp.setName(contactPerson.getName());
@@ -86,7 +91,8 @@ public class ContactPersonController {
                 cp.setLastName(contactPerson.getLastName());
             if (contactPerson.getPhoneNumber()!=null)
                 cp.setPhoneNumber(contactPerson.getPhoneNumber());
-            contactPersonRepository.save(cp);
+            contactPersonService.createContactPerson(cp);
+            //contactPersonRepository.save(cp);
             return cp;
         }
 }

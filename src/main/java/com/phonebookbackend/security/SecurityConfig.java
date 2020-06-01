@@ -1,5 +1,6 @@
 package com.phonebookbackend.security;
 
+import com.phonebookbackend.repository.UserRepository;
 import com.phonebookbackend.security.jwt.AuthEntryPointJwt;
 import com.phonebookbackend.security.jwt.AuthTokenFilter;
 import com.phonebookbackend.security.services.UserDetailsServiceImpl;
@@ -14,6 +15,7 @@ import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -22,10 +24,22 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    @Autowired
-    UserDetailsServiceImpl userDetailsService;
-    @Autowired
-    private AuthEntryPointJwt unauthorizedHandler;
+    private final UserDetailsServiceImpl userDetailsService;
+    private final AuthEntryPointJwt unauthorizedHandler;
+//    @Autowired
+//    UserDetailsServiceImpl userDetailsService;
+//    @Autowired
+//    private AuthEntryPointJwt unauthorizedHandler;
+
+    public SecurityConfig(UserDetailsServiceImpl userDetailsService,AuthEntryPointJwt unauthorizedHandler) {
+        this.userDetailsService = userDetailsService;
+        this.unauthorizedHandler = unauthorizedHandler;
+    }
+
+//    @Bean
+//    public UserDetailsService userDetailsService(UserRepository userRepository){
+//        return new UserDetailsServiceImpl(userRepository);
+//    }
 
     @Bean
     public AuthTokenFilter authTokenFilter(){

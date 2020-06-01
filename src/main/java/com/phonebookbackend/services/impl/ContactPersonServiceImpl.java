@@ -27,6 +27,11 @@ public class ContactPersonServiceImpl implements ContactPersonService {
     }
 
     @Override
+    public List<ContactPerson> getByName(String name) {
+        return contactPersonRepository.findByName(name);
+    }
+
+    @Override
     public ContactPerson createContactPerson(ContactPerson contactPerson) {
         return contactPersonRepository.save(contactPerson);
     }
