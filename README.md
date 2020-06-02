@@ -14,3 +14,8 @@ Add more practical back end functions for the full-stack web application in : ht
 # Testing
 - Implement Unit Test and integrate unit test tool between JUnit and Mockito.
 - Implement Integration testing the APIs in the controller with @WebMvcTest
+
+# Docker
+- Dockerize PhoneBook_backend to run it in an isolated environment, a.k.a. container.
+- A container is a standardized unit of software that assembles code, runtime, dependencies, settings, and initialization in a single package that you can run reliably from one computing environment to another. 
+- Image ID of PhoneBook_backend: c9e78c22f4ed
