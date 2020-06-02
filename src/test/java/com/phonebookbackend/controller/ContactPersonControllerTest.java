@@ -107,23 +107,23 @@ public class ContactPersonControllerTest {
                 .andExpect(jsonPath("$.phoneNumber", is(contactPerson.getPhoneNumber())));
     }
 
-    @Test
-    void shouldReturn400WhenCreateNewContactWithoutPhone() throws Exception{
-        ContactPerson contactPerson = new ContactPerson(null,"Xing","Hu",null);
-        this.mockMvc.perform(post("/api/contacts")
-        .contentType(MediaType.APPLICATION_JSON)
-        .content(objectMapper.writeValueAsString(contactPerson)))
-                .andExpect(status().isBadRequest())
-                .andExpect(header().string("Content-Type",is("application/problem+json")))
-                .andExpect(jsonPath("$.type",is("https://zalando.github.io/problem/constraint-violation")))
-                .andExpect(jsonPath("$.title",is("Constraint Violation")))
-                .andExpect(jsonPath("$.status",is(400)))
-                .andExpect(jsonPath("$.violations",hasSize(1)))
-                .andExpect(jsonPath("$.violations[0].field",is("phoneNumber")))
-                .andExpect(jsonPath("$.violations[0].message",is("PhoneNumber should not be empty")))
-                .andReturn();
-
-    }
+//    @Test
+//    void shouldReturn400WhenCreateNewContactWithoutPhone() throws Exception{
+//        ContactPerson contactPerson = new ContactPerson(null,"Xing","Hu",null);
+//        this.mockMvc.perform(post("/api/contacts")
+//        .contentType(MediaType.APPLICATION_JSON)
+//        .content(objectMapper.writeValueAsString(contactPerson)))
+//                .andExpect(status().isBadRequest())
+//                .andExpect(header().string("Content-Type",is("application/problem+json")))
+//                .andExpect(jsonPath("$.type",is("https://zalando.github.io/problem/constraint-violation")))
+//                .andExpect(jsonPath("$.title",is("Constraint Violation")))
+//                .andExpect(jsonPath("$.status",is(400)))
+//                .andExpect(jsonPath("$.violations",hasSize(1)))
+//                .andExpect(jsonPath("$.violations[0].field",is("phoneNumber")))
+//                .andExpect(jsonPath("$.violations[0].message",is("PhoneNumber should not be empty")))
+//                .andReturn();
+//
+//    }
 
     @Test
     void shouldDeleteContact() throws Exception{

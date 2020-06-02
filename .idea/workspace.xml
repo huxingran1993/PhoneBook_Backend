@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b45866ae-4c81-4634-ba2d-fca345e5c6f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/exception/ExceptionHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/ContactPersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/ContactPersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/model/ContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/model/ContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/phonebookbackend/controller/ContactPersonControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/phonebookbackend/controller/ContactPersonControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/controller/ContactPersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/controller/ContactPersonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson$ContactPersonBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson$ContactPersonBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,30 +62,17 @@
     <property name="android.sdk.path" value="D:/JAVA/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="D:/Java_study/Mall/mall/mall-demo" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.phonebookbackend.config" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git_repo\phone-book-backend" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactPersonControllerTest.shouldUpdateContact">
-    <configuration name="ContactPersonControllerTest.shouldCreateNewContactPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="phone-book-backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.phonebookbackend.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.phonebookbackend.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.phonebookbackend.controller.ContactPersonControllerTest" />
-      <option name="METHOD_NAME" value="shouldCreateNewContactPerson" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.docker/Dockerfile">
     <configuration name="ContactPersonControllerTest.shouldDeleteContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phone-book-backend" />
       <extension name="coverage">
@@ -159,13 +144,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="target/docker/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker/Dockerfile" />
         <item itemvalue="JUnit.ContactPersonControllerTest.shouldUpdateContact" />
         <item itemvalue="JUnit.ContactPersonControllerTest.shouldDeleteContact" />
         <item itemvalue="JUnit.ContactPersonControllerTest.shouldFetchOneById" />
         <item itemvalue="JUnit.ContactPersonControllerTest.shouldReturn400WhenCreateNewContactWithoutPhone" />
-        <item itemvalue="JUnit.ContactPersonControllerTest.shouldCreateNewContactPerson" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +173,22 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="Containers" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="Images" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -206,7 +220,7 @@
       <workItem from="1590919318929" duration="16574000" />
       <workItem from="1590955798413" duration="7706000" />
       <workItem from="1591014085461" duration="14986000" />
-      <workItem from="1591089490592" duration="12343000" />
+      <workItem from="1591089490592" duration="18500000" />
     </task>
     <task id="LOCAL-00001" summary="add Swagger">
       <created>1590587232205</created>
@@ -257,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591030829264</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implement integration testing for contact person controller">
+      <created>1591103683106</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591103683106</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +294,8 @@
     <MESSAGE value="add Swagger for auth controller and disabler Spring security for Swagger" />
     <MESSAGE value="add Unit test for contact person service" />
     <MESSAGE value="Implement integration testing for contact person controller, optimize this controller invoke service rather than repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement integration testing for contact person controller, optimize this controller invoke service rather than repository" />
+    <MESSAGE value="Implement integration testing for contact person controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement integration testing for contact person controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="873" y="360" key="#Notifications" timestamp="1590587293587">
@@ -292,10 +314,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1556" y="517" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1591027397980" />
-    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2" timestamp="1591030819691">
+    <state x="1498" y="267" key="#docker/Dockerfile" timestamp="1591110905487">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1591030819691" />
+    <state x="1498" y="267" key="#docker/Dockerfile/0.0.2560.1400@0.0.2560.1400" timestamp="1591110905487" />
+    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2" timestamp="1591103680269">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1591103680269" />
     <state x="1061" y="457" key="FileChooserDialogImpl" timestamp="1590749788344">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -356,26 +382,26 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1361" y="416" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590962384288" />
-    <state x="782" y="344" key="SettingsEditor" timestamp="1590923446125">
+    <state x="1201" y="369" key="SettingsEditor" timestamp="1591108866525">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="782" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1590923446125" />
+    <state x="1201" y="369" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1591108866525" />
     <state x="958" y="406" key="VCS.ChangeListViewerDialog" timestamp="1590587405147">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="958" y="406" key="VCS.ChangeListViewerDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590587405147" />
-    <state x="1012" y="516" key="Vcs.Push.Dialog.v2" timestamp="1591030875768">
+    <state x="1012" y="516" key="Vcs.Push.Dialog.v2" timestamp="1591103690688">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1012" y="516" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591030875768" />
+    <state x="1012" y="516" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591103690688" />
     <state x="93" y="93" width="2375" height="1215" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1590588394967">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="93" y="93" width="2375" height="1215" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590588394967" />
-    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591103556328">
+    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591111399284">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591103556328" />
+    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591111399284" />
     <state x="944" y="550" key="git4idea.ui.GitUnstashDialog" timestamp="1590587411617">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -388,9 +414,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1023" y="321" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591028592493" />
-    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup" timestamp="1591096841447">
+    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup" timestamp="1591110999912">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1591096841447" />
+    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1591110999912" />
   </component>
 </project>
