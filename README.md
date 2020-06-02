@@ -1,5 +1,5 @@
 # PhoneBook_backend
-Add more functions for the back end
+Add more practical back end functions for the full-stack web application in : https://github.com/huxingran1993/PhoneBook
 
 # Swagger
 - Add Swagger for Controllers
