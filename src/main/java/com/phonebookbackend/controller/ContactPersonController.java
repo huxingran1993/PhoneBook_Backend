@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -54,10 +55,12 @@ public class ContactPersonController {
 
         @ApiOperation("Add contact info")
         @PostMapping()
-        public ContactPerson addContact(@RequestBody ContactPerson contactPerson){
-            contactPersonService.createContactPerson(contactPerson);
+        @ResponseStatus(HttpStatus.CREATED)
+        public ContactPerson addContact(@RequestBody @Validated ContactPerson contactPerson){
+
+            return contactPersonService.createContactPerson(contactPerson);
            // contactPersonRepository.save(contactPerson);
-            return contactPerson;
+            //return contactPerson;
         }
 
         @ApiOperation("Get contact info by id")

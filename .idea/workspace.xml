@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b45866ae-4c81-4634-ba2d-fca345e5c6f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/phonebookbackend/controller/ContactPersonControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/exception/ExceptionHandling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phone-book-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/phone-book-backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/PhoneBookBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/PhoneBookBackendApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/ContactPersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/ContactPersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/services/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/services/UserDetailsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/services/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/services/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/services/ContactPersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/services/ContactPersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/services/impl/ContactPersonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/services/impl/ContactPersonServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/phonebookbackend/service/ContactPersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/phonebookbackend/service/ContactPersonServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/model/ContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/model/ContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/phonebookbackend/controller/ContactPersonControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/phonebookbackend/controller/ContactPersonControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/controller/ContactPersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/controller/ContactPersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson$ContactPersonBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson$ContactPersonBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/model/ContactPerson.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +71,8 @@
       <recent name="com.phonebookbackend.config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactPersonControllerTest.shouldFetchOneById">
-    <configuration name="ContactPersonControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ContactPersonControllerTest.shouldUpdateContact">
+    <configuration name="ContactPersonControllerTest.shouldCreateNewContactPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phone-book-backend" />
       <extension name="coverage">
         <pattern>
@@ -87,12 +82,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.phonebookbackend.controller" />
       <option name="MAIN_CLASS_NAME" value="com.phonebookbackend.controller.ContactPersonControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="shouldCreateNewContactPerson" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactPersonControllerTest.shouldFetchAllContactPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactPersonControllerTest.shouldDeleteContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phone-book-backend" />
       <extension name="coverage">
         <pattern>
@@ -102,7 +98,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.phonebookbackend.controller" />
       <option name="MAIN_CLASS_NAME" value="com.phonebookbackend.controller.ContactPersonControllerTest" />
-      <option name="METHOD_NAME" value="shouldFetchAllContactPerson" />
+      <option name="METHOD_NAME" value="shouldDeleteContact" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,33 +120,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactPersonServiceTest.shouldBeDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactPersonControllerTest.shouldReturn400WhenCreateNewContactWithoutPhone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phone-book-backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.phonebookbackend.service.*" />
+          <option name="PATTERN" value="com.phonebookbackend.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.phonebookbackend.service" />
-      <option name="MAIN_CLASS_NAME" value="com.phonebookbackend.service.ContactPersonServiceTest" />
-      <option name="METHOD_NAME" value="shouldBeDelete" />
+      <option name="PACKAGE_NAME" value="com.phonebookbackend.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.phonebookbackend.controller.ContactPersonControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturn400WhenCreateNewContactWithoutPhone" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactPersonServiceTest.updateContactPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactPersonControllerTest.shouldUpdateContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="phone-book-backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.phonebookbackend.service.*" />
+          <option name="PATTERN" value="com.phonebookbackend.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.phonebookbackend.service" />
-      <option name="MAIN_CLASS_NAME" value="com.phonebookbackend.service.ContactPersonServiceTest" />
-      <option name="METHOD_NAME" value="updateContactPerson" />
+      <option name="PACKAGE_NAME" value="com.phonebookbackend.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.phonebookbackend.controller.ContactPersonControllerTest" />
+      <option name="METHOD_NAME" value="shouldUpdateContact" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContactPersonControllerTest.shouldUpdateContact" />
+        <item itemvalue="JUnit.ContactPersonControllerTest.shouldDeleteContact" />
         <item itemvalue="JUnit.ContactPersonControllerTest.shouldFetchOneById" />
-        <item itemvalue="JUnit.ContactPersonControllerTest" />
-        <item itemvalue="JUnit.ContactPersonControllerTest.shouldFetchAllContactPerson" />
-        <item itemvalue="JUnit.ContactPersonServiceTest.updateContactPerson" />
-        <item itemvalue="JUnit.ContactPersonServiceTest.shouldBeDelete" />
+        <item itemvalue="JUnit.ContactPersonControllerTest.shouldReturn400WhenCreateNewContactWithoutPhone" />
+        <item itemvalue="JUnit.ContactPersonControllerTest.shouldCreateNewContactPerson" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +205,8 @@
       <workItem from="1590783749893" duration="8445000" />
       <workItem from="1590919318929" duration="16574000" />
       <workItem from="1590955798413" duration="7706000" />
-      <workItem from="1591014085461" duration="13319000" />
+      <workItem from="1591014085461" duration="14986000" />
+      <workItem from="1591089490592" duration="12343000" />
     </task>
     <task id="LOCAL-00001" summary="add Swagger">
       <created>1590587232205</created>
@@ -253,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590963492726</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implement integration testing for contact person controller, optimize this controller invoke service rather than repository">
+      <created>1591030829264</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591030829264</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,13 +272,18 @@
     <MESSAGE value="add JWT" />
     <MESSAGE value="add Swagger for auth controller and disabler Spring security for Swagger" />
     <MESSAGE value="add Unit test for contact person service" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Unit test for contact person service" />
+    <MESSAGE value="Implement integration testing for contact person controller, optimize this controller invoke service rather than repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement integration testing for contact person controller, optimize this controller invoke service rather than repository" />
   </component>
   <component name="WindowStateProjectService">
     <state x="873" y="360" key="#Notifications" timestamp="1590587293587">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="873" y="360" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1590587293587" />
+    <state x="1159" y="100" width="1237" height="1200" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591097825220">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1159" y="100" width="1237" height="1200" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591097825220" />
     <state x="1043" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590599308387">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -283,30 +292,34 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1556" y="517" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1591027397980" />
-    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2" timestamp="1590963486560">
+    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2" timestamp="1591030819691">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1590963486560" />
+    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1591030819691" />
     <state x="1061" y="457" key="FileChooserDialogImpl" timestamp="1590749788344">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1061" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1590749788344" />
-    <state width="2561" height="345" key="GridCell.Tab.0.bottom" timestamp="1591030309640">
+    <state x="0" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1591103637508">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="345" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591030309640" />
-    <state width="2561" height="345" key="GridCell.Tab.0.center" timestamp="1591030309639">
+    <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.2560.1400@0.0.2560.1400" timestamp="1591103637508" />
+    <state width="2561" height="533" key="GridCell.Tab.0.bottom" timestamp="1591103651768">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="345" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591030309639" />
-    <state width="2561" height="345" key="GridCell.Tab.0.left" timestamp="1591030309639">
+    <state width="2561" height="533" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591103651768" />
+    <state width="2561" height="533" key="GridCell.Tab.0.center" timestamp="1591103651768">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="345" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591030309639" />
-    <state width="2561" height="345" key="GridCell.Tab.0.right" timestamp="1591030309640">
+    <state width="2561" height="533" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591103651768" />
+    <state width="2561" height="533" key="GridCell.Tab.0.left" timestamp="1591103651768">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="345" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591030309640" />
+    <state width="2561" height="533" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591103651768" />
+    <state width="2561" height="533" key="GridCell.Tab.0.right" timestamp="1591103651768">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2561" height="533" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591103651768" />
     <state width="2561" height="540" key="GridCell.Tab.1.bottom" timestamp="1591027165416">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -351,18 +364,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="958" y="406" key="VCS.ChangeListViewerDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590587405147" />
-    <state x="1012" y="516" key="Vcs.Push.Dialog.v2" timestamp="1590963505981">
+    <state x="1012" y="516" key="Vcs.Push.Dialog.v2" timestamp="1591030875768">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1012" y="516" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1590963505981" />
+    <state x="1012" y="516" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591030875768" />
     <state x="93" y="93" width="2375" height="1215" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1590588394967">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="93" y="93" width="2375" height="1215" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590588394967" />
-    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591030414264">
+    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591103556328">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591030414264" />
+    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591103556328" />
     <state x="944" y="550" key="git4idea.ui.GitUnstashDialog" timestamp="1590587411617">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -375,9 +388,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1023" y="321" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591028592493" />
-    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup" timestamp="1590920309207">
+    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup" timestamp="1591096841447">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1590920309207" />
+    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1591096841447" />
   </component>
 </project>

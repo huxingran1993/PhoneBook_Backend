@@ -8,9 +8,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
-
-
-import java.lang.annotation.Inherited;
+import javax.validation.constraints.NotEmpty;
 
 @Document("info")
 @Data
@@ -29,6 +27,7 @@ public class ContactPerson {
     String lastName;
 
     @ApiModelProperty(value = "Phone Number")
+    @NotEmpty(message = "PhoneNumber should not be empty")
     @Field("phoneNumber")
     String phoneNumber;
 
