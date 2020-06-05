@@ -34,16 +34,29 @@ pipeline {
       }
     }
 
-    stage('Deploy prompt') {
+    stage('Building image') {
       steps {
-        input 'Deploy to Production?'
+        script {
+          dockerImage = docker.build registry + ":$BUILD_NUMBER"
+        }
+
       }
     }
 
-    stage('Deploy') {
+    stage('Deploy Image') {
       steps {
-        echo 'Initiating Deployment'
-        echo 'Deployment Complete'
+        script {
+          docker.withRegistry( '', registryCredential ) {
+            dockerImage.push()
+          }
+        }
+
+      }
+    }
+
+    stage('Remove Unused docker image') {
+      steps {
+        sh "docker rmi $registry:$BUILD_NUMBER"
       }
     }
 
@@ -53,5 +66,8 @@ pipeline {
   }
   environment {
     TESTER = 'placeholder'
+    registry = 'docker_hub_account/repository_name'
+    registryCredential = 'dockerhub'
+    dockerImage = ''
   }
 }
