@@ -11,11 +11,9 @@ pipeline {
 
     stage('Testing') {
       parallel {
-        stage('SonarQube Test') {
+        stage('Test') {
           steps {
-            echo 'Initiating SonarQube test'
-            sh 'mvn sonar:sonar -Dsonar.host.url=http://54.254.186.202:8081 -Dlicense.skip=true'
-            echo 'SonarQube test Complete'
+            sh 'mvn clean test'
           }
         }
 
@@ -33,6 +31,19 @@ pipeline {
           }
         }
 
+      }
+    }
+
+    stage('Deploy prompt') {
+      steps {
+        input 'Deploy to Production?'
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+        echo 'Initiating Deployment'
+        echo 'Deployment Complete'
       }
     }
 
