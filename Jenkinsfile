@@ -1,5 +1,5 @@
 pipeline {
-  agent none
+  agent any
   stages {
     stage('Build') {
       agent {
@@ -17,7 +17,7 @@ pipeline {
     stage('Test') {
       agent {
         docker {
-          image 'maven:3.5.0-jdk-8-alpine'
+          image 'maven:3.5.2-jdk-8-alpine'
           args '-v mavenRepository:/root/.m2'
         }
 
