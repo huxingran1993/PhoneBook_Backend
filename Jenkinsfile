@@ -68,5 +68,6 @@ pipeline {
     TESTER = 'placeholder'
     registry = 'docker_hub_account/repository_name'
     registryCredential = 'dockerhub'
+    dockerImage = ''
   }
 }
