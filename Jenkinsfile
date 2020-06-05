@@ -1,30 +1,34 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'maven:3.5.2-jdk-8-alpine'
+      args '-v /root/.m2:/root/.m2'
+    }
+
+  }
   stages {
-    stage('Compile Stage') {
+    stage('Compile, build and docker image') {
       steps {
-        withMaven(maven: 'Maven') {
-          sh 'mvn clean compile'
-        }
-
+        sh 'mvn -B -DskipTests clean package'
       }
     }
 
-    stage('Testing Stage') {
-      steps {
-        withMaven(maven: 'Maven') {
-          sh 'mvn test'
+    stage('Unit Test') {
+      post {
+        always {
+          junit 'target/surefire-reports/*.xml'
         }
 
       }
+      steps {
+        sh 'mvn test'
+      }
     }
 
-    stage('Deployment Stage') {
+    stage('Push to DockerHub') {
       steps {
-        withMaven(maven: 'Maven') {
-          sh 'mvn deploy'
-        }
-
+        sh './jenkins/scripts/deliver.sh'
+        sh 'mvn dockerfile:push'
       }
     }
 
