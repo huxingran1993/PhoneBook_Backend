@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @Service
 public class ContactPersonServiceImpl implements ContactPersonService {
+
     private final ContactPersonRepository contactPersonRepository;
 
     public ContactPersonServiceImpl(ContactPersonRepository contactPersonRepository) {
