@@ -40,4 +40,7 @@ pipeline {
   tools {
     maven 'Maven 3.6.3'
   }
+  environment {
+    TESTER = 'placeholder'
+  }
 }
