@@ -1,21 +1,16 @@
 pipeline {
-  agent any
-  stages {
-    stage('Build') {
-      steps {
-        sh 'mvn -B -DskipTests clean package'
-      }
-    }
-
-    stage('Deploy') {
-      steps {
-        sh 'ls build/libs/*.jar'
-        echo 'Deploying...'
-      }
+  agent {
+    docker {
+      image 'maven:3.3.3'
     }
 
   }
-  triggers {
-    pollSCM('* * * * *')
+  stages {
+    stage('build') {
+      steps {
+        sh 'mvn --version'
+      }
+    }
+
   }
 }
