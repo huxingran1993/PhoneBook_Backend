@@ -25,10 +25,17 @@ Add more practical back end functions for the full-stack web application in : ht
 
 ### Step 
 Run cmd, cd to the path of the application. eg. D:\git_repo\phone-book-backend
-1. mvn package
-2. mvn package docker:build
+1. $ mvn package
+2. $ docker build -t pb-docker .
+3. $ docker run -p 5000:8080 -t pb-docker\
+\
+*Note: specified that the port 8080 on the container should be mapped to the port 5000 on the Host OS.*
 
-- Image ID of PhoneBook_backend: c9e78c22f4ed
+#### Push to DockerHub
+1. $ docker login
+2. $ docker tag pb-docker huxingran/phone_book_backend:modified 
+3. $ docker push huxingran/phone_book_backend:modified
+
 - DockHub: https://hub.docker.com/repository/docker/huxingran/phone_book_backend/general
 
 ## Jenkins
