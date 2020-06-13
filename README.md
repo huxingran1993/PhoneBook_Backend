@@ -16,8 +16,18 @@ Add more practical back end functions for the full-stack web application in : ht
 - Implement Integration testing the APIs in the controller with @WebMvcTest
 
 ## Docker
+### Install
+- I installed the Docker Desktop, easy to use.
+### Dockerize your application
+
 - Dockerize PhoneBook_backend to run it in an isolated environment, a.k.a. container.
 - A container is a standardized unit of software that assembles code, runtime, dependencies, settings, and initialization in a single package that you can run reliably from one computing environment to another. 
+
+### Step 
+Run cmd, cd to the path of the application. eg. D:\git_repo\phone-book-backend
+1. mvn package
+2. mvn package docker:build
+
 - Image ID of PhoneBook_backend: c9e78c22f4ed
 - DockHub: https://hub.docker.com/repository/docker/huxingran/phone_book_backend/general
 
