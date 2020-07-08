@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Api(tags = "ContactPersonController")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api/contacts")
 public class ContactPersonController {

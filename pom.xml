@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <docker.image.prefix>phone-book-backend-docker</docker.image.prefix>
+        <docker.image.prefix>phone-book</docker.image.prefix>
     </properties>
 
     <dependencies>
@@ -128,20 +128,19 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>1.0.0</version>
+
                 <configuration>
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-                    <dockerDirectory>${project.basedir}</dockerDirectory>
+                    <dockerDirectory>src/main/docker</dockerDirectory>
                 <resources>
                     <resource>
-                        <targetPath>/</targetPath>
                         <directory>${project.build.directory}</directory>
                         <include>${project.build.finalName}.jar</include>
                     </resource>
                 </resources>
             </configuration>
-            </plugin>
 
+            </plugin>
         </plugins>
     </build>
 

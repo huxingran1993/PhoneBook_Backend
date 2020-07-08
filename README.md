@@ -1,7 +1,10 @@
 # PhoneBook_backend
-Add more practical back end functions for the full-stack web application in : https://github.com/huxingran1993/PhoneBook
+- Add more practical back-end functions.
+- The corresponding Angular CLI front-end for the dash board: https://github.com/huxingran1993/PhoneBook-Front-end
+- The Login&Register page built with Vue.js:  https://github.com/huxingran1993/Vue-JWT
 
-## Swagger
+# Swagger
+Swagger 2 is an open source project used to describe and document REST-ful APIs
 - Add Swagger for Controllers
 - Go to the url with Swagger UI: http://localhost:8080/swagger-ui.html#/
 

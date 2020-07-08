@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b45866ae-4c81-4634-ba2d-fca345e5c6f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/config/EsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/EsAddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/dao/EsAddressDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/model/EsAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/repository/EsAddressRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/services/EsAddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/services/impl/EsAddressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phone-book-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/phone-book-backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/services/impl/ContactPersonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/services/impl/ContactPersonServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/ContactPersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/ContactPersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/controller/ContactPersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/controller/ContactPersonController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +63,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="D:/Java_study/Mall/mall/mall-demo" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Docker" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -167,8 +159,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.docker/Dockerfile" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="JUnit.ContactPersonControllerTest.shouldUpdateContact" />
         <item itemvalue="JUnit.ContactPersonControllerTest.shouldDeleteContact" />
         <item itemvalue="JUnit.ContactPersonControllerTest.shouldFetchOneById" />
@@ -221,7 +213,17 @@
       <workItem from="1591964987530" duration="12152000" />
       <workItem from="1591979020744" duration="112000" />
       <workItem from="1591979461881" duration="13468000" />
-      <workItem from="1592041868050" duration="8508000" />
+      <workItem from="1592041868050" duration="17007000" />
+      <workItem from="1592391517960" duration="213000" />
+      <workItem from="1592500789239" duration="3319000" />
+      <workItem from="1593087588357" duration="598000" />
+      <workItem from="1593356591844" duration="19000" />
+      <workItem from="1593383553932" duration="1112000" />
+      <workItem from="1593426176453" duration="314000" />
+      <workItem from="1593889472434" duration="1695000" />
+      <workItem from="1593971790013" duration="2996000" />
+      <workItem from="1594202682951" duration="333000" />
+      <workItem from="1594205203613" duration="273000" />
     </task>
     <task id="LOCAL-00001" summary="add Swagger">
       <created>1590587232205</created>
@@ -293,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591369140233</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implement Elasticsearch for Address">
+      <created>1592058870021</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1592058870021</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,9 +321,14 @@
     <MESSAGE value="Implement integration testing for contact person controller" />
     <MESSAGE value="Built a Docker image for running a Spring Boot application." />
     <MESSAGE value="Implement Aspect function of Log, monitor ContactPersonController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Aspect function of Log, monitor ContactPersonController" />
+    <MESSAGE value="Implement Elasticsearch for Address" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Elasticsearch for Address" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="873" y="360" key="#Docker" timestamp="1592061061257">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="873" y="360" key="#Docker/0.0.2560.1400@0.0.2560.1400" timestamp="1592061061257" />
     <state x="1001" y="267" key="#Dockerfile" timestamp="1591351078796">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -327,62 +341,62 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1159" y="100" width="1237" height="1200" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591097825220" />
-    <state x="1043" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590599308387">
+    <state x="1043" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593984093648">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1043" y="505" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1590599308387" />
+    <state x="1043" y="505" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1593984093648" />
     <state x="1556" y="517" key="#com.intellij.ide.util.MemberChooser" timestamp="1592053666007">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1556" y="517" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1592053666007" />
-    <state x="1498" y="267" key="#docker/Dockerfile" timestamp="1591110905487">
+    <state x="1498" y="267" key="#docker/Dockerfile" timestamp="1593889762127">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1498" y="267" key="#docker/Dockerfile/0.0.2560.1400@0.0.2560.1400" timestamp="1591110905487" />
-    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2" timestamp="1591369138248">
+    <state x="1498" y="267" key="#docker/Dockerfile/0.0.2560.1400@0.0.2560.1400" timestamp="1593889762127" />
+    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2" timestamp="1594205490365">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1591369138248" />
-    <state x="1061" y="457" key="FileChooserDialogImpl" timestamp="1590749788344">
+    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1594205490365" />
+    <state x="1061" y="457" key="FileChooserDialogImpl" timestamp="1592504863989">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1590749788344" />
+    <state x="1061" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1592504863989" />
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1591103637508">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.2560.1400@0.0.2560.1400" timestamp="1591103637508" />
-    <state width="2561" height="354" key="GridCell.Tab.0.bottom" timestamp="1592058351722">
+    <state width="2561" height="506" key="GridCell.Tab.0.bottom" timestamp="1593984586187">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="354" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592058351722" />
-    <state width="2561" height="354" key="GridCell.Tab.0.center" timestamp="1592058351722">
+    <state width="2561" height="506" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
+    <state width="2561" height="506" key="GridCell.Tab.0.center" timestamp="1593984586187">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="354" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592058351722" />
-    <state width="2561" height="354" key="GridCell.Tab.0.left" timestamp="1592058351721">
+    <state width="2561" height="506" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
+    <state width="2561" height="506" key="GridCell.Tab.0.left" timestamp="1593984586187">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="354" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592058351721" />
-    <state width="2561" height="354" key="GridCell.Tab.0.right" timestamp="1592058351722">
+    <state width="2561" height="506" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
+    <state width="2561" height="506" key="GridCell.Tab.0.right" timestamp="1593984586187">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="354" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592058351722" />
-    <state width="2561" height="354" key="GridCell.Tab.1.bottom" timestamp="1592058351722">
+    <state width="2561" height="506" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
+    <state width="2561" height="506" key="GridCell.Tab.1.bottom" timestamp="1593984586188">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="354" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592058351722" />
-    <state width="2561" height="354" key="GridCell.Tab.1.center" timestamp="1592058351722">
+    <state width="2561" height="506" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586188" />
+    <state width="2561" height="506" key="GridCell.Tab.1.center" timestamp="1593984586187">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="354" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592058351722" />
-    <state width="2561" height="354" key="GridCell.Tab.1.left" timestamp="1592058351722">
+    <state width="2561" height="506" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
+    <state width="2561" height="506" key="GridCell.Tab.1.left" timestamp="1593984586187">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="354" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592058351722" />
-    <state width="2561" height="354" key="GridCell.Tab.1.right" timestamp="1592058351722">
+    <state width="2561" height="506" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
+    <state width="2561" height="506" key="GridCell.Tab.1.right" timestamp="1593984586188">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="354" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592058351722" />
+    <state width="2561" height="506" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586188" />
     <state width="2561" height="498" key="GridCell.Tab.2.bottom" timestamp="1590940137024">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -403,41 +417,49 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1361" y="416" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591366884349" />
-    <state x="1201" y="369" key="SettingsEditor" timestamp="1591108866525">
+    <state x="249" y="129" key="MergeDialog" timestamp="1594205633035">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1201" y="369" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1591108866525" />
+    <state x="249" y="129" key="MergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594205633035" />
+    <state x="994" y="418" key="MultipleFileMergeDialog" timestamp="1594205633044">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="994" y="418" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594205633044" />
+    <state x="1201" y="369" key="SettingsEditor" timestamp="1593426494834">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1201" y="369" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1593426494834" />
     <state x="958" y="406" key="VCS.ChangeListViewerDialog" timestamp="1590587405147">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="958" y="406" key="VCS.ChangeListViewerDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590587405147" />
-    <state x="1012" y="516" key="Vcs.Push.Dialog.v2" timestamp="1592058828080">
+    <state x="1012" y="516" key="Vcs.Push.Dialog.v2" timestamp="1592058877002">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1012" y="516" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592058828080" />
+    <state x="1012" y="516" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592058877002" />
     <state x="93" y="93" width="2375" height="1215" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1590588394967">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="93" y="93" width="2375" height="1215" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590588394967" />
-    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592058773893">
+    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594205529610">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592058773893" />
+    <state x="1090" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594205529610" />
     <state x="944" y="550" key="git4idea.ui.GitUnstashDialog" timestamp="1590587411617">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="944" y="550" key="git4idea.ui.GitUnstashDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590587411617" />
-    <state x="1112" y="340" key="new project wizard" timestamp="1589627722254">
+    <state x="1112" y="340" width="1099" height="563" key="new project wizard" timestamp="1593426474395">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1112" y="340" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1589627722254" />
+    <state x="1112" y="340" width="1099" height="563" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1593426474395" />
     <state x="1023" y="321" key="refactoring.ChangeSignatureDialog" timestamp="1591028592493">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1023" y="321" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591028592493" />
-    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup" timestamp="1591110999912">
+    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup" timestamp="1593971990318">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1591110999912" />
+    <state x="1082" y="463" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1593971990318" />
   </component>
 </project>
