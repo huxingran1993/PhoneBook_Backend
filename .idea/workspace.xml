@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b45866ae-4c81-4634-ba2d-fca345e5c6f0" name="Default Changelist" comment="">
+    <list default="true" id="b45866ae-4c81-4634-ba2d-fca345e5c6f0" name="Default Changelist" comment="update README.md">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/component/WebLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/dto/WebLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pic/Aspect.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/config/AspectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/config/AspectConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/ContactPersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phonebookbackend/controller/ContactPersonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/phonebookbackend/controller/ContactPersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/phonebookbackend/controller/ContactPersonController.class" afterDir="false" />
     </list>
@@ -19,6 +21,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -70,6 +73,7 @@
       <recent name="com.phonebookbackend.config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git_repo\phone-book-backend\src\pic" />
       <recent name="D:\git_repo\phone-book-backend" />
     </key>
   </component>
@@ -223,7 +227,10 @@
       <workItem from="1593889472434" duration="1695000" />
       <workItem from="1593971790013" duration="2996000" />
       <workItem from="1594202682951" duration="333000" />
-      <workItem from="1594205203613" duration="273000" />
+      <workItem from="1594205203613" duration="641000" />
+      <workItem from="1594393917824" duration="1748000" />
+      <workItem from="1594641446281" duration="1888000" />
+      <workItem from="1594806568353" duration="8165000" />
     </task>
     <task id="LOCAL-00001" summary="add Swagger">
       <created>1590587232205</created>
@@ -302,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592058870021</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update README.md">
+      <created>1594205694157</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1594205694157</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +336,8 @@
     <MESSAGE value="Built a Docker image for running a Spring Boot application." />
     <MESSAGE value="Implement Aspect function of Log, monitor ContactPersonController" />
     <MESSAGE value="Implement Elasticsearch for Address" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Elasticsearch for Address" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="873" y="360" key="#Docker" timestamp="1592061061257">
@@ -353,10 +368,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1498" y="267" key="#docker/Dockerfile/0.0.2560.1400@0.0.2560.1400" timestamp="1593889762127" />
-    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2" timestamp="1594205490365">
+    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2" timestamp="1594817637330">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1594205490365" />
+    <state x="768" y="297" width="1379" height="811" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1594817637330" />
     <state x="1061" y="457" key="FileChooserDialogImpl" timestamp="1592504863989">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -365,38 +380,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.2560.1400@0.0.2560.1400" timestamp="1591103637508" />
-    <state width="2561" height="506" key="GridCell.Tab.0.bottom" timestamp="1593984586187">
+    <state width="1278" height="191" key="GridCell.Tab.0.bottom" timestamp="1594672332769">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="506" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
-    <state width="2561" height="506" key="GridCell.Tab.0.center" timestamp="1593984586187">
+    <state width="1278" height="191" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594672332769" />
+    <state width="1278" height="191" key="GridCell.Tab.0.center" timestamp="1594672332769">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="506" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
-    <state width="2561" height="506" key="GridCell.Tab.0.left" timestamp="1593984586187">
+    <state width="1278" height="191" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594672332769" />
+    <state width="1278" height="191" key="GridCell.Tab.0.left" timestamp="1594672332769">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="506" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
-    <state width="2561" height="506" key="GridCell.Tab.0.right" timestamp="1593984586187">
+    <state width="1278" height="191" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594672332769" />
+    <state width="1278" height="191" key="GridCell.Tab.0.right" timestamp="1594672332769">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="506" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
-    <state width="2561" height="506" key="GridCell.Tab.1.bottom" timestamp="1593984586188">
+    <state width="1278" height="191" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594672332769" />
+    <state width="1278" height="191" key="GridCell.Tab.1.bottom" timestamp="1594672332769">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="506" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586188" />
-    <state width="2561" height="506" key="GridCell.Tab.1.center" timestamp="1593984586187">
+    <state width="1278" height="191" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594672332769" />
+    <state width="1278" height="191" key="GridCell.Tab.1.center" timestamp="1594672332769">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="506" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
-    <state width="2561" height="506" key="GridCell.Tab.1.left" timestamp="1593984586187">
+    <state width="1278" height="191" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594672332769" />
+    <state width="1278" height="191" key="GridCell.Tab.1.left" timestamp="1594672332769">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="506" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586187" />
-    <state width="2561" height="506" key="GridCell.Tab.1.right" timestamp="1593984586188">
+    <state width="1278" height="191" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594672332769" />
+    <state width="1278" height="191" key="GridCell.Tab.1.right" timestamp="1594672332769">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2561" height="506" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1593984586188" />
+    <state width="1278" height="191" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594672332769" />
     <state width="2561" height="498" key="GridCell.Tab.2.bottom" timestamp="1590940137024">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -433,10 +448,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="958" y="406" key="VCS.ChangeListViewerDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590587405147" />
-    <state x="1012" y="516" key="Vcs.Push.Dialog.v2" timestamp="1592058877002">
+    <state x="1012" y="516" key="Vcs.Push.Dialog.v2" timestamp="1594205704030">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1012" y="516" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592058877002" />
+    <state x="1012" y="516" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594205704030" />
     <state x="93" y="93" width="2375" height="1215" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1590588394967">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

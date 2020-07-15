@@ -6,6 +6,8 @@ import com.phonebookbackend.services.ContactPersonService;
 import com.phonebookbackend.services.impl.ContactPersonServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,7 +28,7 @@ public class ContactPersonController {
 //    @Autowired
 //    ContactPersonRepository contactPersonRepository;
 
-    //private static final Logger LOGGER = LogFactory.getLogger()
+    private static final Logger LOGGER = LoggerFactory.getLogger(ContactPersonController.class);
     public ContactPersonController(ContactPersonServiceImpl contactPersonService) {
         this.contactPersonService = contactPersonService;
     }
@@ -34,7 +36,6 @@ public class ContactPersonController {
     @ApiOperation("Get all contact info")
     @GetMapping()
     //@PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
-
     public ResponseEntity<List<ContactPerson>> getAllContacts(@RequestParam(required = false) String name){
         try {
             List<ContactPerson> contacts = new ArrayList<ContactPerson>();

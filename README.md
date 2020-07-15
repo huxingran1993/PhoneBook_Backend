@@ -3,13 +3,23 @@
 - The corresponding Angular CLI front-end for the dash board: https://github.com/huxingran1993/PhoneBook-Front-end
 - The Login&Register page built with Vue.js:  https://github.com/huxingran1993/Vue-JWT
 
-# Swagger
+## Swagger
 Swagger 2 is an open source project used to describe and document REST-ful APIs
 - Add Swagger for Controllers
 - Go to the url with Swagger UI: http://localhost:8080/swagger-ui.html#/
 
+## AOP
+- AOP is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns.
+- Implemented in config.AspectConfig
+- Joinpoint: A Joinpoint is a point during the execution of a program, such as execution of a method or the handling of an exception.
+- Pointcut: A Pointcut is a predicate that helps match an Advice to be applied by an Aspect at a particular JoinPoint. The Advice is often associated with a Pointcut expression and runs at any Joinpoint matched by the Pointcut.
+- Advice: An advice is an action taken by an aspect at a particular Joinpoint. Different types of advice include “around,” “before” and “after” advice.\
+- You can check the HttpRequest info like below:
+![Alt text](src/pic/Aspect.png)
+
+
 ## JWT
-- User can signup new account, or login with username & password.
+- User can sign-up new account, or login with username & password.
 - By User’s role (admin, moderator, user), we authorize the User to access resources (role-based Authorization)
 - Spring Security will manage cors, csrf, session, rules for protected resources, authentication & authorization along with exception handler.
 - The database we will use is MongoDB which can be accessed by the help of Spring Data MongoDB.
