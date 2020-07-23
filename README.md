@@ -9,11 +9,11 @@ Swagger 2 is an open source project used to describe and document REST-ful APIs
 - Go to the url with Swagger UI: http://localhost:8080/swagger-ui.html#/
 
 ## AOP
-- AOP is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns.
+- **AOP** is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns.
 - Implemented in config.AspectConfig
-- Joinpoint: A Joinpoint is a point during the execution of a program, such as execution of a method or the handling of an exception.
-- Pointcut: A Pointcut is a predicate that helps match an Advice to be applied by an Aspect at a particular JoinPoint. The Advice is often associated with a Pointcut expression and runs at any Joinpoint matched by the Pointcut.
-- Advice: An advice is an action taken by an aspect at a particular Joinpoint. Different types of advice include “around,” “before” and “after” advice.\
+- **Joinpoint**: A Joinpoint is a point during the execution of a program, such as execution of a method or the handling of an exception.
+- **Pointcut**: A Pointcut is a predicate that helps match an Advice to be applied by an Aspect at a particular JoinPoint. The Advice is often associated with a Pointcut expression and runs at any Joinpoint matched by the Pointcut.
+- **Advice**: An advice is an action taken by an aspect at a particular Joinpoint. Different types of advice include “around,” “before” and “after” advice.\
 - You can check the HttpRequest info like below:
 ![Alt text](src/pic/Aspect.png)
 
